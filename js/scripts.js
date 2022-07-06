@@ -28,7 +28,7 @@ function newItem(){
  	// crossOutButton.addEventListener("click", deleteListItem);
 
 
-  let crossOutButton = $('<button></button>');
+  let crossOutButton = $('<crossOutButton></crossOutButton>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
 
