@@ -9,23 +9,23 @@ function newItem(){
 
 
    if (inputValue === '') {
-     alert("You must write something!");
+     alert('You must write something!');
    } else {
      let list = $('#list');
      list.append(li);
    }
 
  //2. Crossing out an item from the list of items:
-  li.on("dblclick", function() {
+  li.on('dblclick', function() {
     li.toggleClass('strike');
   });
 
  //3(i). Adding the delete button "X":
   //  let crossOutButton = document.createElement("crossOutButton");
- 	// crossOutButton.appendChild(document.createTextNode("X"));
- 	// li.appendChild(crossOutButton);
+  // crossOutButton.appendChild(document.createTextNode("X"));
+  // li.appendChild(crossOutButton);
   //
- 	// crossOutButton.addEventListener("click", deleteListItem);
+  // crossOutButton.addEventListener("click", deleteListItem);
 
 
   let crossOutButton = $('<crossOutButton></crossOutButton>');
@@ -35,7 +35,7 @@ function newItem(){
 
 
  //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
-  crossOutButton.on("click", function(){
+  crossOutButton.on('click', function(){
     li.addClass('delete');
   });
 
